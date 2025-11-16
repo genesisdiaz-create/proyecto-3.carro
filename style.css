@@ -1,0 +1,114 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    background-color: #bcf5ec;
+}
+
+.header-bg {
+    background: url('https://i.postimg.cc/HWSFxDvY/descarga-(10).jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+}
+
+/* Navigation */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Product Cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #000000;
+}
+
+.card-text {
+    height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #09365d;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c0106;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    margin-top: auto;
+}
+
+/* Spinner */
+#loadingSpinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Cart Badge Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.badge {
+    transition: transform 0.3s;
+}
+
+.badge.pulse {
+    animation: pulse 0.5s;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-title {
+        height: 4rem;
+        -webkit-line-clamp: 3;
+    }
+}
